@@ -31,6 +31,7 @@ class Rna:
             'G': 'C',
             'C': 'G',
             'T': 'A',
+            'U': 'A'
             }
         for nuc in self.line[::-1]:
             complement_seq += nucleotides[nuc]
@@ -39,7 +40,7 @@ class Rna:
 
 class Dna(Rna):
 
-    def _init_(self, line):
+    def __init__(self, line):
         
         self.line = line
 
