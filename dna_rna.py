@@ -45,12 +45,12 @@ class Dna(Rna):
 
         if len(self.line) < 0:
             raise 'lil line'
-        rna_nuc = ['A', 'G', 'C', 'U']
+        rna_nuc = ['A', 'G', 'C', 'T']
         for nuc in line:
             if nuc in rna_nuc:
                 pass
             else:
-                raise Exception('not an RNA')
+                raise Exception('not a DNA')
                 
         self.nucleotides = {
             'A': 'T',
