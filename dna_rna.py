@@ -43,7 +43,7 @@ class Dna(Rna):
         
         self.line = line
 
-        if len(self.line) < 0:
+        if len(self.line) == 0:
             raise 'lil line'
         rna_nuc = ['A', 'G', 'C', 'T']
         for nuc in line:
